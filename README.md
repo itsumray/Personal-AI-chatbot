@@ -1,1 +1,1 @@
-# Personal-AI-chatbot
+Ever wondered how an AI would sound if it wrote like you? This interactive chatbot analyzes your linguistic fingerprint from a simple sentence and flawlessly adopts your style for all subsequent conversations, supporting both English and Japanese.
