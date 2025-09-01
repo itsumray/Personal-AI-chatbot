@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Mimic AI</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Generative AI SDK from CDN -->
+    <script type="module" src="https://esm.run/@google/generative-ai"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Mimic My Style AI Chat</h1>
+
+        <div id="sentence-input-section" class="card">
+            <p><strong>Step 1:</strong> To help the AI learn your unique writing style, please provide an original sentence about the following topic. This sentence will serve as its linguistic blueprint.</p>
+            <p class="topic-highlight"><strong>Topic: The Future of AI and Humanity</strong></p>
+            <textarea id="original-sentence" rows="6" placeholder="Example (English): The intricate dance between evolving artificial intelligence and the nuanced tapestry of human existence promises a future brimming with both unprecedented opportunity and profound ethical dilemmas.
+Example (Japanese): 進化する人工知能と、複雑に織りなされた人類の存在との間の精緻な舞いは、前例のない機会と深遠な倫理的ジレンマの両方をはらむ未来を約束する。"></textarea>
+            <button id="submit-sentence">Analyze Style & Start Chat</button>
+        </div>
+
+        <div id="chat-section" class="card" style="display: none;">
+            <p><strong>Step 2:</strong> Chat with the AI! It has analyzed your writing and will now attempt to mimic your style in its responses. Feel free to ask questions in either English or Japanese.</p>
+            <div id="chat-history">
+                <!-- Chat messages will appear here -->
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="user-input" placeholder="Ask something in your style (English or Japanese)..." disabled>
+                <button id="send-chat" disabled>Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
